@@ -1,0 +1,124 @@
+{
+  "images": [
+    {
+      "id": 1,
+      "image": "https://artfiles.alphacoders.com/890/89079.jpg",
+      "name": "dedsec1",
+      "author": "Jhon Doe",
+      "location": "California",
+      "date": "13-02-2024"
+    },
+    {
+      "id": 2,
+      "image": "https://artfiles.alphacoders.com/983/98324.jpg",
+      "name": "dedsec2",
+      "author": "Jane Smith",
+      "location": "New York",
+      "date": "14-02-2024"
+    },
+    {
+      "id": 3,
+      "image": "https://artfiles.alphacoders.com/987/98756.jpg",
+      "name": "dedsec3",
+      "author": "Bob Johnson",
+      "location": "Texas",
+      "date": "15-02-2024"
+    },
+    {
+      "id": 4,
+      "image": "https://artfiles.alphacoders.com/990/99002.jpg",
+      "name": "dedsec4",
+      "author": "Alice Williams",
+      "location": "Florida",
+      "date": "16-02-2024"
+    },
+    {
+      "id": 5,
+      "image": "https://artfiles.alphacoders.com/995/99532.jpg",
+      "name": "dedsec5",
+      "author": "Michael Brown",
+      "location": "Washington",
+      "date": "17-02-2024"
+    },
+    {
+      "id": 6,
+      "image": "https://artfiles.alphacoders.com/999/99999.jpg",
+      "name": "dedsec6",
+      "author": "Emily Davis",
+      "location": "Illinois",
+      "date": "18-02-2024"
+    },
+    {
+      "id": 7,
+      "image": "https://artfiles.alphacoders.com/887/88731.jpg",
+      "name": "dedsec7",
+      "author": "David Martinez",
+      "location": "Arizona",
+      "date": "19-02-2024"
+    },
+    {
+      "id": 8,
+      "image": "https://artfiles.alphacoders.com/878/87854.jpg",
+      "name": "dedsec8",
+      "author": "Sarah Wilson",
+      "location": "Michigan",
+      "date": "20-02-2024"
+    },
+    {
+      "id": 9,
+      "image": "https://artfiles.alphacoders.com/863/86322.jpg",
+      "name": "dedsec9",
+      "author": "Christopher Lee",
+      "location": "Ohio",
+      "date": "21-02-2024"
+    },
+    {
+      "id": 10,
+      "image": "https://artfiles.alphacoders.com/856/85678.jpg",
+      "name": "dedsec10",
+      "author": "Jessica Taylor",
+      "location": "Georgia",
+      "date": "22-02-2024"
+    },
+    {
+      "id": 11,
+      "image": "https://artfiles.alphacoders.com/823/82345.jpg",
+      "name": "dedsec11",
+      "author": "Daniel Harris",
+      "location": "North Carolina",
+      "date": "23-02-2024"
+    },
+    {
+      "id": 12,
+      "image": "https://artfiles.alphacoders.com/810/81003.jpg",
+      "name": "dedsec12",
+      "author": "Olivia Brown",
+      "location": "Virginia",
+      "date": "24-02-2024"
+    },
+    {
+      "id": 13,
+      "image": "https://artfiles.alphacoders.com/803/80301.jpg",
+      "name": "dedsec13",
+      "author": "Matthew Wilson",
+      "location": "Indiana",
+      "date": "25-02-2024"
+    },
+    {
+      "id": 14,
+      "image": "https://artfiles.alphacoders.com/799/79942.jpg",
+      "name": "dedsec14",
+      "author": "Ella Rodriguez",
+      "location": "Massachusetts",
+      "date": "26-02-2024"
+    },
+    {
+      "id": 15,
+      "image": "https://artfiles.alphacoders.com/789/78904.jpg",
+      "name": "dedsec15",
+      "author": "Liam Martinez",
+      "location": "Pennsylvania",
+      "date": "27-02-2024"
+    }
+  ]
+}
