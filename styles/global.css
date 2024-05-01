@@ -43,15 +43,11 @@ body {
 .header-title {
   font-family: "Sedgwick Ave Display", cursive;
   font-size: 2.3rem;
-  color: rgb(253, 248, 248);
+  color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   font-weight: 700;
   letter-spacing: 2px;
-}
-
-.header-title,
-.nav__link {
   text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px,
     rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px,
     rgb(0, 0, 0) 0.705713px 2.91581px 0px,
@@ -81,9 +77,9 @@ body {
 .nav__link:link,
 .nav__link:visited {
   font-size: 2.3rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
-  color: rgb(253, 248, 248);
+  color: rgb(36, 36, 36);
   text-decoration: none;
   display: block;
   transition: all 0.3s;

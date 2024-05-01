@@ -1,4 +1,6 @@
 /* HEADER */
+.nav__link:link,
+.nav__link:visited,
 h1,
 p {
   text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px,
@@ -15,6 +17,7 @@ p {
     rgb(0, 0, 0) 0.850987px -2.87677px 0px,
     rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px,
     rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+  color: #fff;
 }
 header {
   height: 70vh;
