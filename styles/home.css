@@ -23,7 +23,7 @@ header {
       rgba(34, 34, 34, 0.6),
       rgba(34, 34, 34, 0.6)
     ),
-    url(/Images/homeBackground.jpg);
+    url(/images/homeBackground.jpg);
   background-size: cover;
   color: #fff;
 }
