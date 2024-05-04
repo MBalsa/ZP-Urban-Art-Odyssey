@@ -1,0 +1,94 @@
+.accordion {
+  width: 70%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.accordion > p {
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+  text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px,
+    rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px,
+    rgb(0, 0, 0) 0.705713px 2.91581px 0px,
+    rgb(0, 0, 0) -0.287171px 2.98622px 0px,
+    rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px,
+    rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px,
+    rgb(0, 0, 0) -2.94502px -0.571704px 0px,
+    rgb(0, 0, 0) -2.59586px -1.50383px 0px,
+    rgb(0, 0, 0) -1.96093px -2.27041px 0px,
+    rgb(0, 0, 0) -1.11013px -2.78704px 0px,
+    rgb(0, 0, 0) -0.137119px -2.99686px 0px,
+    rgb(0, 0, 0) 0.850987px -2.87677px 0px,
+    rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px,
+    rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+}
+
+.item {
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 24px;
+  row-gap: 32px;
+  align-items: center;
+}
+.number,
+.text {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.number {
+  color: #ced4da;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  stroke: #090909;
+}
+.hidden-box {
+  grid-column: 2;
+  display: none;
+}
+
+.hidden-box p {
+  line-height: 1.6;
+  margin-bottom: 24px;
+  font-size: 2.3rem;
+}
+
+/* OPEN STATE */
+
+.open {
+  border-top: 4px solid #e036be;
+}
+
+.open .hidden-box {
+  display: block;
+}
+
+.open .number {
+  color: white;
+  text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px,
+    rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px,
+    rgb(0, 0, 0) 0.705713px 2.91581px 0px,
+    rgb(0, 0, 0) -0.287171px 2.98622px 0px,
+    rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px,
+    rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px,
+    rgb(0, 0, 0) -2.94502px -0.571704px 0px,
+    rgb(0, 0, 0) -2.59586px -1.50383px 0px,
+    rgb(0, 0, 0) -1.96093px -2.27041px 0px,
+    rgb(0, 0, 0) -1.11013px -2.78704px 0px,
+    rgb(0, 0, 0) -0.137119px -2.99686px 0px,
+    rgb(0, 0, 0) 0.850987px -2.87677px 0px,
+    rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px,
+    rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+}
+
+.open .text {
+  font-weight: 700;
+}
