@@ -3,122 +3,137 @@
     {
       "id": 1,
       "image": "https://artfiles.alphacoders.com/890/89079.jpg",
-      "name": "dedsec1",
+      "name": "Tagz",
       "author": "Jhon Doe",
       "location": "California",
-      "date": "13-02-2024"
+      "date": "13-02-2024",
+      "description": "Jhon Doe invites us to a serene landscape, where the sun's gentle embrace paints a canvas of tranquility."
     },
     {
       "id": 2,
       "image": "https://artfiles.alphacoders.com/983/98324.jpg",
-      "name": "dedsec2",
+      "name": "Graffix",
       "author": "Jane Smith",
       "location": "New York",
-      "date": "14-02-2024"
+      "date": "14-02-2024",
+      "description": "Jane Smith captures the bustling energy of urban life, where city streets pulse with the rhythm of daily life."
     },
     {
       "id": 3,
       "image": "https://artfiles.alphacoders.com/987/98756.jpg",
-      "name": "dedsec3",
+      "name": "Writings",
       "author": "Bob Johnson",
       "location": "Texas",
-      "date": "15-02-2024"
+      "date": "15-02-2024",
+      "description": "Bob Johnson's lens unveils the raw beauty of nature, where rugged terrain and vast skies inspire awe."
     },
     {
       "id": 4,
       "image": "https://artfiles.alphacoders.com/990/99002.jpg",
-      "name": "dedsec4",
+      "name": "Spectr",
       "author": "Alice Williams",
       "location": "Florida",
-      "date": "16-02-2024"
+      "date": "16-02-2024",
+      "description": "Alice Williams' photograph exudes vibrant colors and vivid imagery, inviting us to explore boundless horizons."
     },
     {
       "id": 5,
       "image": "https://artfiles.alphacoders.com/995/99532.jpg",
-      "name": "dedsec5",
+      "name": "Chromatix",
       "author": "Michael Brown",
       "location": "Washington",
-      "date": "17-02-2024"
+      "date": "17-02-2024",
+      "description": "Michael Brown's lens reveals a world of quiet contemplation, where nature's symphony soothes the soul."
     },
     {
       "id": 6,
       "image": "https://artfiles.alphacoders.com/999/99999.jpg",
-      "name": "dedsec6",
+      "name": "Vandalix",
       "author": "Emily Davis",
       "location": "Illinois",
-      "date": "18-02-2024"
+      "date": "18-02-2024",
+      "description": "Emily Davis captures the allure of city lights, where the urban landscape transforms into a dreamscape at night."
     },
     {
       "id": 7,
       "image": "https://artfiles.alphacoders.com/887/88731.jpg",
-      "name": "dedsec7",
+      "name": "Blitz",
       "author": "David Martinez",
       "location": "Arizona",
-      "date": "19-02-2024"
+      "date": "19-02-2024",
+      "description": "David Martinez's photograph transports us to untamed landscapes, where nature's grandeur dwarfs all else."
     },
     {
       "id": 8,
       "image": "https://artfiles.alphacoders.com/878/87854.jpg",
-      "name": "dedsec8",
+      "name": "Grafiti",
       "author": "Sarah Wilson",
       "location": "Michigan",
-      "date": "20-02-2024"
+      "date": "20-02-2024",
+      "description": "Sarah Wilson's lens unveils the mysteries of the forest, where ancient trees whisper tales of bygone eras."
     },
     {
       "id": 9,
       "image": "https://artfiles.alphacoders.com/863/86322.jpg",
-      "name": "dedsec9",
+      "name": "Colorwave",
       "author": "Christopher Lee",
       "location": "Ohio",
-      "date": "21-02-2024"
+      "date": "21-02-2024",
+      "description": "Christopher Lee's photograph invites us to explore the simplicity of small-town life, where community thrives."
     },
     {
       "id": 10,
       "image": "https://artfiles.alphacoders.com/856/85678.jpg",
-      "name": "dedsec10",
+      "name": "Tagz",
       "author": "Jessica Taylor",
       "location": "Georgia",
-      "date": "22-02-2024"
+      "date": "22-02-2024",
+      "description": "Jessica Taylor's lens captures the vibrancy of city life, where each street corner holds a new adventure."
     },
     {
       "id": 11,
       "image": "https://artfiles.alphacoders.com/823/82345.jpg",
-      "name": "dedsec11",
+      "name": "Skyline",
       "author": "Daniel Harris",
       "location": "North Carolina",
-      "date": "23-02-2024"
+      "date": "23-02-2024",
+      "description": "Daniel Harris paints a portrait of rugged beauty, where mountains meet the sky and rivers carve their path."
     },
     {
       "id": 12,
       "image": "https://artfiles.alphacoders.com/810/81003.jpg",
-      "name": "dedsec12",
+      "name": "Streetz",
       "author": "Olivia Brown",
       "location": "Virginia",
-      "date": "24-02-2024"
+      "date": "24-02-2024",
+      "description": "Olivia Brown captures the elegance of historic architecture, where timeless beauty meets modern aspirations."
     },
     {
       "id": 13,
       "image": "https://artfiles.alphacoders.com/803/80301.jpg",
-      "name": "dedsec13",
+      "name": "Scribbles",
       "author": "Matthew Wilson",
       "location": "Indiana",
-      "date": "25-02-2024"
+      "date": "25-02-2024",
+      "description": "Matthew Wilson's lens uncovers hidden treasures, where open fields and rolling hills stretch to the horizon."
     },
     {
       "id": 14,
       "image": "https://artfiles.alphacoders.com/799/79942.jpg",
-      "name": "dedsec14",
+      "name": "Coastal",
       "author": "Ella Rodriguez",
       "location": "Massachusetts",
-      "date": "26-02-2024"
+      "date": "26-02-2024",
+      "description": "Ella Rodriguez's photograph depicts coastal charm, where the rhythm of the ocean lulls all worries away."
     },
     {
       "id": 15,
       "image": "https://artfiles.alphacoders.com/789/78904.jpg",
-      "name": "dedsec15",
+      "name": "Serenity",
       "author": "Liam Martinez",
       "location": "Pennsylvania",
-      "date": "27-02-2024"
+      "date": "27-02-2024",
+      "description": "Liam Martinez's lens reveals the tranquility of rural landscapes, where simplicity and serenity coexist harmoniously."
     }
   ]
 }

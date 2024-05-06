@@ -67,3 +67,46 @@ input {
   font-family: "Knewave", cursive;
   letter-spacing: 2px;
 }
+.filters {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.filters input {
+  width: 30px;
+  height: 30px;
+  margin: 15px;
+}
+
+.cardContainer {
+  width: 80%;
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.card {
+  padding: 2rem;
+  box-shadow: 0 0 0.4rem 0.4rem rgba(0, 0, 0, 0.2);
+  transition: 0.2s ease-in;
+}
+.card:hover {
+  background: rgb(222, 222, 222);
+  box-shadow: none;
+}
+.card-text {
+  font-size: medium;
+  line-height: normal;
+  margin-bottom: 50 px;
+  text-shadow: none;
+  color: #111;
+}
+.card input {
+  padding: 10px;
+  font-size: 100%;
+  font-weight: bolder;
+}
+.card-img {
+  max-height: 20rem;
+}
