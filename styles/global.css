@@ -85,6 +85,11 @@ body {
   transition: all 0.3s;
 }
 
+.nav_link:hover,
+.nav_link:active {
+  transform: translateY(-0.25em);
+}
+
 /* FOOTER */
 .footer {
   padding: 10rem 3rem;

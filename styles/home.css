@@ -19,6 +19,11 @@ p {
     rgb(0, 0, 0) 2.88051px -0.838247px 0px;
   color: #fff;
 }
+
+.nav__link:hover,
+.nav__link:active {
+  transform: translateY(-0.2em);
+}
 header {
   height: 70vh;
   position: relative;
@@ -98,6 +103,12 @@ input {
   margin: 15px;
 }
 
+.filter {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+
 .cardContainer {
   width: 80%;
   margin: 4rem auto;
@@ -110,16 +121,24 @@ input {
   box-shadow: 0 0 0.4rem 0.4rem rgba(0, 0, 0, 0.2);
   transition: 0.2s ease-in;
   display: none;
+  background-color: rgba(110, 110, 110, 0.7);
 }
 .card:hover {
   background: rgb(222, 222, 222);
   box-shadow: none;
 }
 .card-text {
-  font-size: medium;
+  font-size: 2rem;
   line-height: normal;
-  margin-bottom: 50 px;
+  margin-bottom: 30px;
   text-shadow: none;
+  color: #111;
+  font-weight: 700;
+}
+
+.card h4 {
+  padding: 20px 0;
+  font-size: 1.7rem;
   color: #111;
 }
 .card input {
@@ -127,6 +146,11 @@ input {
   font-size: 100%;
   font-weight: bolder;
   width: fit-content;
+  background-color: #353535;
+  color: #cbc5c5;
+  box-shadow: none;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 .card input:hover {
   background-color: #111;
@@ -140,13 +164,19 @@ input {
 .middle {
   display: flex;
   flex-direction: column;
+  background-image: linear-gradient(
+      rgba(90, 90, 90, 0.6),
+      rgba(81, 81, 81, 0.6)
+    ),
+    url(/images/wallBackground.jpg);
+  background-size: cover;
 }
 .loadMore {
   width: fit-content;
   align-self: center;
   padding: 10px;
   margin-bottom: 100px;
-  background-color: white;
+  background-color: rgb(222, 222, 222);
   border: 6px solid black;
   color: #111;
   font-size: 15px;
@@ -156,6 +186,9 @@ input {
   font-family: "Knewave", cursive;
   letter-spacing: 2px;
   cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 900;
+  transition: 0.2s ease-in;
 }
 .loadMore:hover {
   background-color: #111;

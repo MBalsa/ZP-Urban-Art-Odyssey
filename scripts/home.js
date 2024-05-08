@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let currentItem = 3;
 
+  //DINAMICKI GENERISANE KARTICE
   const postMethods = () => {
     fetch("source/data.json")
       .then((response) => {
@@ -24,8 +25,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
       .then((data) => {
         data.images.map((postData) => {
+          const formattedDate = postData.date.split("-").reverse().join("-");
           const postElement = document.createElement("div");
           postElement.classList.add("card");
+          postElement.setAttribute("data-date", formattedDate);
+          postElement.setAttribute("name", postData.name);
+          postElement.setAttribute("location", postData.location);
+          postElement.setAttribute("author", postData.author);
           postElement.innerHTML = `
           <img
             class="card-img"
@@ -45,6 +51,8 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   postMethods();
+
+  //LOAD MORE
   let query = search.value;
   console.log(query);
   loadMoreBtn.onclick = () => {
@@ -57,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
       loadMoreBtn.style.display = "none";
     }
   };
-
+  //READ MORE Modalni prozori
   document.addEventListener("click", function (event) {
     if (event.target && event.target.id === "readMoreBtn") {
       artPrewiev.style.display = "block";
@@ -95,21 +103,21 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
   });
-
+  //exit dugme
   document.addEventListener("click", function (event) {
     if (event.target && event.target.className === "exit") {
       artPrewiev.style.display = "none";
       modalOverlay.style.display = "none";
     }
   });
-
+  //Esc komanda
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
       artPrewiev.style.display = "none";
       modalOverlay.style.display = "none";
     }
   });
-
+  //Samo jedan checkbox da je aktivan
   checkboxes.forEach((checkbox) => {
     checkbox.addEventListener("change", function () {
       if (this.checked) {
@@ -121,4 +129,97 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+  // Filtriranje checkboxovima
+  function reorderCardsByDate() {
+    const cards = document.querySelectorAll(".card");
+
+    const cardsArray = Array.from(cards);
+
+    cardsArray.sort((cardA, cardB) => {
+      const dateA = new Date(cardA.getAttribute("data-date"));
+      const dateB = new Date(cardB.getAttribute("data-date"));
+      return dateA - dateB;
+    });
+
+    cardsArray.forEach((card) => card.remove());
+
+    const postContainer = document.querySelector(".cardContainer");
+    cardsArray.forEach((card) => postContainer.appendChild(card));
+  }
+
+  document.getElementById("checkbox1").addEventListener("change", function () {
+    if (this.checked) {
+      reorderCardsByDate();
+    }
+  });
+  function reorderCardsByName() {
+    const cards = document.querySelectorAll(".card");
+
+    const cardsArray = Array.from(cards);
+
+    cardsArray.sort((cardA, cardB) => {
+      const nameA = cardA.querySelector(".card-headline").textContent;
+      const nameB = cardB.querySelector(".card-headline").textContent;
+      return nameA.localeCompare(nameB);
+    });
+
+    cardsArray.forEach((card) => card.remove());
+
+    const postContainer = document.querySelector(".cardContainer");
+    cardsArray.forEach((card) => postContainer.appendChild(card));
+  }
+  document.getElementById("checkbox2").addEventListener("change", function () {
+    if (this.checked) {
+      reorderCardsByName();
+    }
+  });
+
+  function reorderCardsByLocation() {
+    console.log("Sorting cards by location...");
+    const cards = document.querySelectorAll(".card");
+
+    const cardsArray = Array.from(cards);
+
+    cardsArray.sort((cardA, cardB) => {
+      const locationA = cardA.getAttribute("location");
+      const locationB = cardB.getAttribute("location");
+      console.log("Location A:", locationA);
+      console.log("Location B:", locationB);
+      return locationA.localeCompare(locationB);
+    });
+
+    cardsArray.forEach((card) => card.remove());
+
+    const postContainer = document.querySelector(".cardContainer");
+    cardsArray.forEach((card) => postContainer.appendChild(card));
+  }
+
+  document.getElementById("checkbox3").addEventListener("change", function () {
+    if (this.checked) {
+      reorderCardsByLocation();
+    }
+  });
+  //SEARCH BAR
+  function filterCards() {
+    const searchValue = search.value.toLowerCase();
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach((card) => {
+      const name = card.getAttribute("name").toLowerCase();
+      const location = card.getAttribute("location").toLowerCase();
+      const author = card.getAttribute("author").toLowerCase();
+
+      if (
+        name.includes(searchValue) ||
+        location.includes(searchValue) ||
+        author.includes(searchValue)
+      ) {
+        card.style.display = "";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  }
+
+  search.addEventListener("input", filterCards);
 });
