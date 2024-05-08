@@ -1,3 +1,8 @@
+.nav__link:hover,
+.nav__link:active {
+  transform: translateY(-0.2em);
+}
+
 /* MAIN */
 
 h2,
