@@ -49,3 +49,34 @@ const slider = function () {
   });
 };
 slider();
+
+//IMG GRID
+
+const column1 = document.getElementById("column1");
+const column2 = document.getElementById("column2");
+const column3 = document.getElementById("column3");
+
+const addImgs = () => {
+  fetch("source/data.json")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      const columns = [column1, column2, column3];
+
+      data.images.forEach((image, index) => {
+        const img = document.createElement("img");
+        img.src = image.image;
+        img.alt = image.name;
+        img.style.width = "100%";
+
+        const columnIndex = index % columns.length;
+        columns[columnIndex].appendChild(img);
+      });
+    });
+};
+
+addImgs();
