@@ -159,7 +159,7 @@ input {
   cursor: pointer;
 }
 .card-img {
-  max-height: 20rem;
+  max-height: 30rem;
 }
 .middle {
   display: flex;
