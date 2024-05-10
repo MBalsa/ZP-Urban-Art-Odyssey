@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <h4 class="date">Date: ${imageData.date}</h4>
                 <h4 class="artist">Artist: ${imageData.author}</h4>
               </div>
-              <div class="mapDisplay">Location</div>
+              <div class="mapDisplay"><iframe src="${imageData.mapsrc}" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
             </div>
           </div>`;
         })
