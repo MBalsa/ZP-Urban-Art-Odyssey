@@ -76,11 +76,14 @@ input {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+  padding: 20px 0;
+  background-color: #353535;
+  color: #fff;
 }
-.filters h1 {
-  font-size: 6rem;
-  margin: 50px 0 50px 0;
+.filters h3 {
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 5rem;
 }
 .filter-container {
   display: flex;
@@ -122,6 +125,7 @@ input {
   transition: 0.2s ease-in;
   display: none;
   background-color: rgba(110, 110, 110, 0.7);
+  min-width: 200px;
 }
 .card:hover {
   background: rgb(222, 222, 222);
@@ -160,6 +164,7 @@ input {
 }
 .card-img {
   max-height: 30rem;
+  max-width: 100%;
 }
 .middle {
   display: flex;

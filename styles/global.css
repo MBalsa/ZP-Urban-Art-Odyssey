@@ -28,12 +28,6 @@ body {
   z-index: 100;
 }
 
-/* nav and stickly class at the same time */
-.nav.sticky {
-  position: fixed;
-  background-color: rgba(255, 255, 255, 0.95);
-}
-
 .nav__logo {
   height: 4.5rem;
   transition: all 0.3s;
@@ -124,6 +118,7 @@ body {
   font-size: 1.5rem;
   color: #aaa;
   text-align: center;
+  text-transform: none;
 }
 
 .footer__copyright .footer__link {
