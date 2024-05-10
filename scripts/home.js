@@ -4,6 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const readMoreBtn = document.getElementById("readMoreBtn");
   const artPrewiev = document.querySelector(".artPreview");
   const modalOverlay = document.querySelector(".modal-overlay");
+  const checkboxes = document.querySelectorAll(
+    '.filters input[type="checkbox"]'
+  );
+  const search = document.getElementById("search");
 
   let loadMoreBtn = document.querySelector(".loadMore");
 
@@ -17,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         return response.json();
       })
+
       .then((data) => {
         data.images.map((postData) => {
           const postElement = document.createElement("div");
@@ -40,7 +45,8 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   postMethods();
-
+  let query = search.value;
+  console.log(query);
   loadMoreBtn.onclick = () => {
     let cards = [...document.querySelectorAll(".card")];
     for (var i = currentItem; i < currentItem + 3; i++) {
@@ -95,5 +101,24 @@ document.addEventListener("DOMContentLoaded", function () {
       artPrewiev.style.display = "none";
       modalOverlay.style.display = "none";
     }
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      artPrewiev.style.display = "none";
+      modalOverlay.style.display = "none";
+    }
+  });
+
+  checkboxes.forEach((checkbox) => {
+    checkbox.addEventListener("change", function () {
+      if (this.checked) {
+        checkboxes.forEach((check) => {
+          if (check !== this) {
+            check.checked = false;
+          }
+        });
+      }
+    });
   });
 });
