@@ -221,13 +221,14 @@ input {
 .artPreview .exit {
   position: absolute;
   top: 5px;
-  right: 5px;
+  right: 10px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .artPreview .preview {
   position: relative;
+  padding: 10px;
 }
 
 .artPreview img {
@@ -241,17 +242,16 @@ input {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
+  font-size: 2rem;
 }
 
 .artPreview .details h4 {
   margin: 5px 0;
 }
 
-.artPreview .mapDisplay {
-  width: 100px;
-  height: 100px;
-  background-color: rgb(255, 98, 0);
-  border-radius: 50%;
+.artPreview .mapDisplay iframe {
+  width: 200px;
+  height: 200px;
   display: inline-block;
   margin-left: 5px;
   margin-right: 5px;
